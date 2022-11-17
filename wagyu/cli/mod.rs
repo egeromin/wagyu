@@ -5,8 +5,6 @@ use crate::model::{
 
 pub mod bitcoin;
 pub mod ethereum;
-pub mod monero;
-pub mod zcash;
 
 pub mod parameters;
 pub use self::parameters::*;

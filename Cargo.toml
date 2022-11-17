@@ -24,21 +24,19 @@ name = "wagyu"
 path = "wagyu/main.rs"
 
 [workspace]
-members = [ "bitcoin", "ethereum", "model", "monero", "zcash" ]
+members = [ "bitcoin", "ethereum", "model" ]
 
 [badges]
 travis-ci = { repository = "AleoHQ/wagyu", branch = "master" }
 
 [features]
 default = ["std"]
-std = ["wagyu-model/std", "wagyu-bitcoin/std", "wagyu-ethereum/std", "wagyu-model/std", "wagyu-monero/std", "wagyu-zcash/std"]
+std = ["wagyu-model/std", "wagyu-bitcoin/std", "wagyu-ethereum/std", "wagyu-model/std"]
 
 [dependencies]
 wagyu-bitcoin = { path = "./bitcoin", version = "0.6.3" }
 wagyu-ethereum = { path = "./ethereum", version = "0.6.3" }
 wagyu-model = { path = "./model", version = "0.6.3" }
-wagyu-monero = { path = "./monero", version = "0.6.3" }
-wagyu-zcash = { path = "./zcash", version = "0.6.3" }
 
 arrayvec = { version = "0.5.1" }
 base58 = { version = "0.1" }
